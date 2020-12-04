@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+select Warehouse.name as WAREHOUSE_NAME, sum(Width*Length*Height*units) as VOLUME from Warehouse inner join Products on Warehouse.product_id=Products.product_id group by Warehouse.name;

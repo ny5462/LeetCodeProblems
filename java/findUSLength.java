@@ -1,0 +1,10 @@
+/** program to find longest uncommon subsequence 
+TC- O(min(a,b))
+**/
+class Solution {
+    public int findLUSlength(String a, String b) {
+        if (a.equals(b))
+            return -1;
+        return Math.max(a.length(), b.length());
+    }
+}
